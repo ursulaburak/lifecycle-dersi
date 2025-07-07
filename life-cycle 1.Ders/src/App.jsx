@@ -19,14 +19,12 @@ function App(props) {
 },[count, props]);
 
   //componentDidMount
-  useEffect(() => {
-    console.log("burası fonksiyon component bir kere çalışır");
+  useEffect(() => {});
+  
 
-    //componentWillUnmount
-    return () =>{
-      //unmount
-    }
-  },[]);
+  useUnmount(() => {
+    console.log("burası sökülürken çalışır özel hook"); 
+   });
   return (
     <>
       <div>
